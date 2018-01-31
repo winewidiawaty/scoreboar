@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#5F9EA0"
+    tools:context="camp.bso.inf.scoreboard.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:text="PERSIB BANDUNG"/>
+
+    <Button
+        android:id="@+id/btn_persib"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Details"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:text="PERSIJA JKT"/>
+
+    <Button
+        android:id="@+id/btn_persija"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Details"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/s1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:textSize="40sp"
+                android:layout_weight="0.33"
+                android:text="0"
+                android:textColor="#FFFFFF"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:textSize="40sp"
+                android:layout_weight="0.33"
+                android:text="-"
+                android:textColor="#FFFFFF"/>
+
+        <TextView
+            android:id="@+id/s2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textSize="40sp"
+            android:layout_weight="0.33"
+            android:text="0"
+            android:textColor="#FFFFFF"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rellayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#1500ff"
+        android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/pluspersib"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:textSize="15pt"/>
+
+            <Button
+            android:id="@+id/minuspersib"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+                android:layout_toRightOf="@+id/pluspersib"
+            android:textSize="15pt"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rellayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ffae00"
+        android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/pluspersija"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:textSize="15pt"/>
+
+        <Button
+            android:id="@+id/minuspersija"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:layout_toRightOf="@+id/pluspersija"
+            android:textSize="15pt"/>
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        android:textSize="5pt"/>
+
+    <Button
+        android:id="@+id/berita"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Berita"
+        android:textSize="5pt"/>
+
+    <Button
+        android:id="@+id/maps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Maps"
+        android:textSize="5pt"/>
+
+</LinearLayout>
